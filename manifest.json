@@ -2,11 +2,14 @@
     "manifest_version": 3,
     "name": "Open URL Extension",
     "version": "1.0",
-    "description": "Opens a user-entered URL in a new tab.",
+    "description": "An extension to open a URL",
     "permissions": [
-        "activeTab"
+        "tabs"
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "index.html"
     }
 }

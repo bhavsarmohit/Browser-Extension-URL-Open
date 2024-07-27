@@ -1,9 +1,12 @@
 /* Basic styles */
-/* body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
-} */
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .popup-hidden {
     opacity: 0;
@@ -12,7 +15,6 @@
 }
 
 .popup-visible {
-    /* position: absolute; */
     background-color: #000000bd;
     color: rgb(107, 17, 17);
     padding: 3px;
@@ -20,7 +22,6 @@
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.087);
     opacity: 0;
     transform: translateX(100%);
-    /* Start off-screen to the right */
     animation: slideIn 1s forwards;
 }
 
@@ -51,32 +52,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.088);
 }
 
-/* Button styles */
-/* button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-button:hover {
-    background-color: #0056b3;
-} */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-}
-
 .form-container {
     background: #752323;
     border-radius: 4px;
@@ -92,10 +67,8 @@ h1 {
     color: #343a40;
 }
 
-/* Text field styling */
 .text-field {
-    width: calc(100%);
-    /* Adjust width to fit within padding */
+    width: 100%;
     padding: 12px;
     border: 1px solid #ced4da;
     border-radius: 4px;
@@ -111,7 +84,11 @@ h1 {
     outline: none;
 }
 
-/* Button styling */
+.text-field.error {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
 .submit-button {
     width: 100%;
     background-color: #007bff;
@@ -130,4 +107,42 @@ h1 {
 
 .submit-button:active {
     background-color: #004085;
+}
+
+.radio-group {
+    display: flex;
+    border: 2px solid #cbe4ff;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(99, 99, 99);
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-label {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-right: 1px solid #007BFF;
+}
+
+.radio-label:last-child {
+    border-right: none;
+}
+
+.radio-button:checked+.radio-label {
+    background-color: #007BFF;
+    color: white;
+}
+
+.radio-button:not(:checked)+.radio-label:hover {
+    background-color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

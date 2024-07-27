@@ -4,13 +4,24 @@
 <head>
     <title>Open URL Extension</title>
     <link rel="stylesheet" href="popup.css">
+
 </head>
 
 <body class="popup-hidden">
     <div class="popup-content slide-in">
-        <h1>Enter URL</h1>
-        <input class="text-field" type="text" id="urlInput" placeholder="Enter URL here" />
-        <button class="submit-button" id="openUrlButton">Open URL</button>
+        <form>
+            <div class="container">
+                <h1>Enter URL</h1>
+                <div class="radio-group">
+                    <input type="radio" id="new" name="status" value="new" class="radio-button" checked>
+                    <label for="new" class="radio-label">New</label>
+                    <input type="radio" id="old" name="status" value="old" class="radio-button">
+                    <label for="old" class="radio-label">Old</label>
+                </div>
+            </div>
+            <input class="text-field" type="text" id="urlInput" placeholder="Enter URL here" />
+            <button class="submit-button" id="openUrlButton">Open URL</button>
+        </form>
     </div>
     <script src="popup.js"></script>
 </body>
