@@ -1,0 +1,37 @@
+Installing the Job Search Browser Extension
+This document provides step-by-step instructions for installing the Job Search Browser Extension, which allows users to search old and new job documents. The extension is stored on SharePoint.
+
+Prerequisites
+Access to the SharePoint path where the extension is stored.
+Administrative permissions to install browser extensions.
+Steps to Install the Extension
+1. Download the Extension
+Open your browser and navigate to the SharePoint path where the extension is stored.
+Locate the extension file (usually a .zip or .crx file).
+Download the extension file to your local machine.
+2. Enable Developer Mode (Chrome)
+Open Google Chrome.
+Click on the three vertical dots in the upper right corner of the browser to open the menu.
+Navigate to More tools > Extensions.
+Toggle the Developer mode switch in the upper right corner.
+3. Install the Extension
+If the Extension is a .zip File
+Extract the .zip file to a folder on your local machine.
+In the Extensions page of Chrome (with Developer mode enabled), click on the Load unpacked button.
+Select the folder where you extracted the .zip file.
+The extension will be installed and appear in the list of installed extensions.
+If the Extension is a .crx File
+Drag and drop the .crx file onto the Extensions page in Chrome.
+Confirm the installation by clicking on the Add extension button in the prompt that appears.
+4. Verify Installation
+Ensure the extension appears in the list of installed extensions.
+The extension icon should also appear in the toolbar, next to the address bar.
+5. Configure the Extension (if necessary)
+Click on the extension icon in the toolbar.
+Follow any prompts to configure settings specific to your job document searches.
+6. Test the Extension
+Open the extension by clicking its icon.
+Enter a search query to verify that it can search old and new job documents as expected.
+Troubleshooting
+Extension not appearing in the toolbar: Ensure Developer mode is enabled and try reinstalling the extension.
+Search not functioning correctly: Check the SharePoint path and ensure the extension settings are configured properly.
